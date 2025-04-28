@@ -1,110 +1,134 @@
+/* Default styles for larger screens */
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #1e1e1e;
-    color: #d4d4d4;
-    margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  margin: 0;
+}
+
+header,
+footer {
+  background-color: #2d2d2d;
+  color: #9cdcfe;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  background-color: #252526;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav a {
+  color: #c586c0;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #9cdcfe;
+}
+
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2,
+h3 {
+  color: #569cd6;
+}
+
+ul li {
+  line-height: 1.6;
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #005a9e;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-pic {
+  max-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile styles for screens smaller than 700px */
+@media (max-width: 700px) {
   header,
   footer {
-    background-color: #2d2d2d;
-    color: #9cdcfe;
-    padding: 1rem;
-    text-align: center;
+    padding: 0.8rem;
   }
-  
-  nav {
-    background-color: #252526;
-    text-align: center;
-    padding: 1rem;
-  }
-  
+
   nav a {
-    color: #c586c0;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-weight: bold;
+    margin: 0.5rem;
+    font-size: 14px;
   }
-  
-  nav a:hover {
-    color: #9cdcfe;
-  }
-  
-  section {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: auto;
-  }
-  
-  h2,
-  h3 {
-    color: #569cd6;
-  }
-  
-  ul li {
-    line-height: 1.6;
-  }
-  
-  .icon-title {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 2rem;
-  }
-  
-  .download-btn {
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 0.6rem 1.2rem;
-    background-color: #007acc;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-  }
-  
-  .download-btn:hover {
-    background-color: #005a9e;
-  }
-  
+
   .about-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 2rem;
+    flex-direction: column;
+    text-align: center;
   }
-  
+
   .profile-pic {
-    max-width: 280px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    margin-bottom: 1rem;
   }
-  
+
   .about-text {
-    flex: 1;
-    min-width: 250px;
+    text-align: center;
   }
-  
-  .fade-in {
-    animation: fadeIn 1s ease-in;
+
+  .download-btn {
+    width: 100%;
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @media (max-width: 700px) {
-    .about-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  }
-  
+}
