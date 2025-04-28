@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diabetes Management & EHR Analysis | Mayvis Ouaziri</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="fade-in">
+  <header>
+    <h1>Diabetes Management & EHR Analysis</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <div class="icon-title"><i class="fa-solid fa-stethoscope"></i><h2>Overview</h2></div>
+    <p>This project uses synthetic Electronic Health Records (EHR) to improve diabetes management. Dashboards were developed in Power BI to identify trends, evaluate treatment plans, monitor costs, and visualize health outcomes across individual and population levels.</p>
+
+    <div class="icon-title"><i class="fa-solid fa-broom"></i><h3>Data Cleaning Process</h3></div>
+    <p>Before building the dashboards, each synthetic dataset was cleaned to ensure consistency and integrity. This included:</p>
+    <ul>
+      <li>Removing duplicate patient IDs and visit records</li>
+      <li>Standardizing date formats and units (e.g., weight in kg, blood glucose in mmol/L)</li>
+      <li>Filling missing demographic values using plausible estimates</li>
+      <li>Filtering out patients with incomplete key metrics (HbA1c, BMI, etc.)</li>
+      <li>Creating calculated fields such as BMI Category and Medication Adherence Status</li>
+    </ul>
+
+    <div class="icon-title"><i class="fa-solid fa-file-arrow-down"></i><h3>Download Datasets</h3></div>
+    <a href="Diabetes/Diabetes_EHR_Cleaned.xlsx" class="download-btn" target="_blank">
+      <i class="fa-solid fa-file-excel"></i> Cleaned EHR Dataset
+    </a>
+    <a href="Diabetes/Diabetes_EHR_Data_Uncleaned.xlsx" class="download-btn" target="_blank">
+      <i class="fa-solid fa-file-excel"></i> Uncleaned Dataset
+    </a>
+
+    <div class="icon-title"><i class="fa-solid fa-chart-bar"></i><h3>Dashboard Snapshots</h3></div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+      <div>
+        <img src="Diabetes/SS1.png" alt="Patient Overview Dashboard" class="profile-pic">
+      </div>
+      <div>
+        <img src="Diabetes/SS2.png" alt="Population Insights Dashboard" class="profile-pic">
+      </div>
+      <div>
+        <img src="Diabetes/SS3.png" alt="Cost Analytics Dashboard" class="profile-pic">
+      </div>
+      <div>
+        <img src="Diabetes/SS4.png" alt="Emergency & Admission Dashboard" class="profile-pic">
+      </div>
+      <div>
+        <img src="Diabetes/SS5.png" alt="Lifestyle & Outcomes Dashboard" class="profile-pic">
+      </div>
+    </div>
+    <a href="Diabetes/Mayvis' final project.pbix" class="download-btn" target="_blank">Download Dashboard (.pbix)</a>
+    <div class="icon-title"><i class="fa-solid fa-lightbulb"></i><h3>Key Features</h3></div>
+    <ul>
+      <li>Monitors medication adherence, blood glucose, BMI, and HbA1c levels</li>
+      <li>Visualizes cost breakdown per patient by city and ethnicity</li>
+      <li>Evaluates patient outcomes and emergency visit trends</li>
+      <li>Filters enabled for gender, age group, ethnicity, and physical activity</li>
+    </ul>
+
+    <p>This analysis was part of an academic project to explore how data-driven tools can improve healthcare delivery and clinical decision-making for diabetes patients.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mayvis Ouaziri | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
